@@ -1,0 +1,22 @@
+PODS:
+  - PokemonAPI (5.0.0)
+  - SDWebImage (5.5.1):
+    - SDWebImage/Core (= 5.5.1)
+  - SDWebImage/Core (5.5.1)
+
+DEPENDENCIES:
+  - PokemonAPI
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - PokemonAPI
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  PokemonAPI: 2ca1a795669f567e3de0f0587136761e8ebfa64d
+  SDWebImage: 1245d058b7b8f59adef7a6da6bbafd4f1ab67041
+
+PODFILE CHECKSUM: 26a5fa0ab65d7580c5921b2af75a539d7586a85b
+
+COCOAPODS: 1.9.0.beta.2
