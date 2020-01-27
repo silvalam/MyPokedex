@@ -33,7 +33,7 @@ class PopUpViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func updateUI(){
         nameLabel.text = pokemon.name
-        heightLabel.text = "\(String(describing: pokemon.height))"
+        heightLabel.text = String(pokemon.height!)
         weightLabel.text = "\(String(describing: pokemon.weight))"
         idLabel.text = "\(String(describing: pokemon.id))"
         

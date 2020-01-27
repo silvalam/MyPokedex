@@ -110,15 +110,19 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             if let nextVC = segue.destination as? PopUpViewController {
                 let pokemon: PKMPokemon!
                 
+                /*
                 guard let cell = (sender as AnyObject).superview?.superview as? PokemonCell else {
                     print("button is not contained in a table view cell")
                     return
+                }*/
+                guard let cell = sender as? UICollectionViewCell, let indexPath = collection.indexPath(for: cell) else {
+                    return // failed
                 }
-                
+                /*
                 guard let indexPath = collection.indexPath(for: cell) else {
                     print("failed to get index path for cell containing button")
                     return
-                }
+                }*/
                 
                 if searchState == .active {
                     pokemon = filteredPokemons[indexPath.row]
